@@ -1,0 +1,226 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "bookConsultation": "Book Consultation"
+  },
+  "hero": {
+    "title": "Healing with Homeopathy, Naturally",
+    "subtitle": "Dr. Jay Bhatt - BHMS, MD (Medicine)",
+    "description": "Experience natural healing with personalized homeopathic treatment. Online and offline consultations available.",
+    "experience": "3+ Years Experience",
+    "rank": "AIR 35 & Gujarat Rank 1",
+    "bookAppointment": "Book Appointment",
+    "consultOnline": "Consult Online",
+    "contactDoctor": "Contact Doctor"
+  },
+  "about": {
+    "title": "About Dr. Jay Bhatt",
+    "subtitle": "Your Trusted Homeopathy Specialist",
+    "journey": "Journey & Qualifications",
+    "journeyText": "Dr. Jay Bhatt completed his BHMS from V.H. Dave Homeopathy College, Anand, Gujarat, and is currently pursuing MD in Medicine from NIH, Delhi. His dedication to homeopathic medicine and patient care has earned him recognition at national and state levels.",
+    "achievements": "Achievements & Recognition",
+    "achievementsList": [
+      "All India Rank 35 (AIR 35) in MD entrance examination",
+      "Rank 1 in Gujarat state for PG entrance exam",
+      "BHMS from V.H. Dave Homeopathy College, Anand",
+      "Currently pursuing MD in Medicine, NIH Delhi",
+      "3+ years of clinical experience",
+      "Specialized in chronic diseases and child health"
+    ],
+    "experience": "Professional Experience",
+    "experienceText": "With over 3 years of dedicated practice, Dr. Jay Bhatt has successfully treated patients with various conditions including chronic diseases, skin allergies, child health issues, and women's health concerns. His approach combines traditional homeopathic principles with modern understanding of health and wellness."
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive Homeopathic Care",
+    "consultationTypes": "Consultation Types",
+    "videoConsultation": {
+      "title": "Video Consultation",
+      "description": "Face-to-face consultation from the comfort of your home",
+      "duration": "30-45 minutes",
+      "price": "₹500"
+    },
+    "phoneConsultation": {
+      "title": "Phone Consultation",
+      "description": "Convenient audio consultation for follow-ups",
+      "duration": "20-30 minutes",
+      "price": "₹300"
+    },
+    "chatConsultation": {
+      "title": "Chat Consultation",
+      "description": "Text-based consultation for quick queries",
+      "duration": "Available 24/7",
+      "price": "₹200"
+    },
+    "clinicVisit": {
+      "title": "Clinic Visit",
+      "description": "In-person consultation at our clinic",
+      "duration": "45-60 minutes",
+      "price": "₹400"
+    },
+    "specializations": "Medical Specializations",
+    "chronicDiseases": {
+      "title": "Chronic Diseases",
+      "description": "Diabetes, hypertension, arthritis, and other long-term conditions"
+    },
+    "skinAllergies": {
+      "title": "Skin & Allergies",
+      "description": "Eczema, psoriasis, allergic reactions, and skin disorders"
+    },
+    "childHealth": {
+      "title": "Child Health",
+      "description": "Pediatric care, immunity building, and developmental health"
+    },
+    "womensHealth": {
+      "title": "Women's Health",
+      "description": "Menstrual disorders, pregnancy care, and hormonal imbalances"
+    },
+    "trustIndicators": "Why Choose Us?",
+    "safety": {
+      "title": "100% Safe",
+      "description": "Natural homeopathic remedies with no side effects"
+    },
+    "response": {
+      "title": "Quick Response",
+      "description": "Same day consultation booking and 24/7 support"
+    },
+    "care": {
+      "title": "Personalized Care",
+      "description": "Individual treatment plans tailored to your needs"
+    },
+    "bookNow": "Book Now"
+  },
+  "contact": {
+    "title": "Contact Dr. Jay Bhatt",
+    "subtitle": "Get in touch for consultation and appointments",
+    "methods": "Contact Methods",
+    "phone": {
+      "title": "Phone Consultation",
+      "description": "Direct call for immediate consultation",
+      "number": "+91 98765 43210",
+      "action": "Call Now"
+    },
+    "whatsapp": {
+      "title": "WhatsApp",
+      "description": "Quick queries and appointment booking",
+      "number": "+91 98765 43210",
+      "action": "Chat on WhatsApp"
+    },
+    "email": {
+      "title": "Email",
+      "description": "Send detailed queries and reports",
+      "address": "dr.jaybhatt@homeopathy.com",
+      "action": "Send Email"
+    },
+    "booking": {
+      "title": "Online Booking",
+      "description": "Book appointments through our website",
+      "action": "Book Appointment"
+    },
+    "form": {
+      "title": "Send Message",
+      "name": "Full Name",
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "symptoms": "Symptoms/Health Concerns",
+      "message": "Message",
+      "send": "Send Message",
+      "required": "Required field"
+    },
+    "clinic": {
+      "title": "Clinic Information",
+      "location": "Clinic Location",
+      "address": "Jay Homeopathy Clinic, Anand, Gujarat, India",
+      "hours": "Clinic Hours",
+      "schedule": [
+        "Monday - Friday: 9:00 AM - 6:00 PM",
+        "Saturday: 9:00 AM - 4:00 PM",
+        "Sunday: 10:00 AM - 2:00 PM"
+      ]
+    },
+    "languages": {
+      "title": "Languages Spoken",
+      "list": ["English", "Hindi", "Gujarati"]
+    },
+    "emergency": {
+      "title": "Emergency Support",
+      "description": "For urgent health concerns, call our emergency helpline",
+      "call": "Call Emergency"
+    }
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "contact": "Contact Info",
+    "followUs": "Follow Us",
+    "rights": "© 2024 Dr. Jay Bhatt Homeopathy. All rights reserved.",
+    "poweredBy": "Made with ❤️ for natural healing"
+  },
+  "booking": {
+    "title": "Book Consultation",
+    "subtitle": "Schedule your appointment with Dr. Jay Bhatt",
+    "step1": "Select Service",
+    "step2": "Choose Date & Time",
+    "step3": "Patient Details",
+    "step4": "Payment",
+    "serviceType": "Service Type",
+    "selectService": "Select a service",
+    "date": "Date",
+    "time": "Time",
+    "selectDate": "Select appointment date",
+    "selectTime": "Select appointment time",
+    "patientInfo": "Patient Information",
+    "fullName": "Full Name",
+    "age": "Age",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "address": "Address (Optional)",
+    "symptoms": "Symptoms/Health Concerns",
+    "symptomsPlaceholder": "Describe your symptoms or health concerns in detail",
+    "paymentMethod": "Payment Method",
+    "payOnline": "Pay Online",
+    "payInPerson": "Pay in Person",
+    "bookAppointment": "Book Appointment",
+    "submitting": "Booking...",
+    "confirmation": {
+      "title": "Booking Confirmed!",
+      "message": "Your appointment has been successfully booked. You will receive a confirmation email shortly.",
+      "details": "Appointment Details",
+      "thankYou": "Thank you for choosing Dr. Jay Bhatt Homeopathy."
+    },
+    "timeSlots": {
+      "morning": ["09:00 AM", "09:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM"],
+      "afternoon": ["02:00 PM", "02:30 PM", "03:00 PM", "03:30 PM", "04:00 PM", "04:30 PM"],
+      "evening": ["05:00 PM", "05:30 PM", "06:00 PM"]
+    }
+  },
+  "blog": {
+    "title": "Health Articles",
+    "subtitle": "Learn about homeopathy and natural healing",
+    "readMore": "Read More",
+    "articles": [
+      {
+        "title": "Benefits of Homeopathy for Chronic Diseases",
+        "excerpt": "Discover how homeopathy can help manage chronic conditions naturally without side effects.",
+        "date": "2024-01-15"
+      },
+      {
+        "title": "Homeopathy for Children: Safe and Effective",
+        "excerpt": "Learn why homeopathy is an excellent choice for treating common childhood ailments.",
+        "date": "2024-01-10"
+      },
+      {
+        "title": "Seasonal Health Tips with Homeopathy",
+        "excerpt": "Prepare your body for seasonal changes with natural homeopathic remedies.",
+        "date": "2024-01-05"
+      }
+    ]
+  }
+}
