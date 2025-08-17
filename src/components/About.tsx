@@ -24,14 +24,14 @@ const About = () => {
   ];
 
   const achievements = [
-    { year: "2024", title: "AIR 35 (All India Rank)", organization: "MD PG Exam" },
-    { year: "2024", title: "Rank 1 in Gujarat", organization: "MD PG Exam" },
+    { year: "2025", title: "AIR 35 (All India Rank)", organization: "MD PG Exam" },
+    { year: "2025", title: "Rank 1 in Gujarat", organization: "MD PG Exam" },
     { year: "2023", title: "Excellence in Homeopathic Treatment", organization: "Indian Medical Association" },
   ];
 
   const experience = [
     { years: "2021-2023", role: "Junior Consultant", place: "City Homeopathic Hospital" },
-    { years: "2023-2024", role: "Senior Consultant", place: "Wellness Homeopathy Clinic" },
+    { years: "2023-2024", role: "Consultant", place: "Wellness Homeopathy Clinic" },
     { years: "2024-Present", role: "Chief Consultant", place: "Private Practice & Online Consultations" },
   ];
 
