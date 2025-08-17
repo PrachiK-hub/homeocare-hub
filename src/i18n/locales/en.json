@@ -16,6 +16,43 @@
     "consultOnline": "Consult Online",
     "contactDoctor": "Contact Doctor"
   },
+  "common": {
+    "bookAppointment": "Book Appointment",
+    "consultOnline": "Consult Online",
+    "contactDoctor": "Contact Doctor",
+    "name": "Name",
+    "age": "Age",
+    "gender": "Gender",
+    "email": "Email",
+    "phone": "Phone",
+    "addressOptional": "Address (optional)",
+    "symptomsConcerns": "Symptoms/Concerns",
+    "chooseService": "Choose Service",
+    "onlineConsultation": "Online Consultation",
+    "clinicVisit": "Clinic Visit",
+    "childHealthPackage": "Child Health Package",
+    "chronicDiseaseManagement": "Chronic Disease Management",
+    "date": "Date",
+    "time": "Time",
+    "paymentMethod": "Payment Method",
+    "payOnline": "Pay Online",
+    "payInPerson": "Pay in Person",
+    "confirmBooking": "Confirm Booking",
+    "bookingSuccessful": "Booking Successful",
+    "confirmationSent": "We have sent confirmation to",
+    "downloadCalendarInvite": "Download Calendar Invite",
+    "whatsappUs": "WhatsApp Us",
+    "call": "Call",
+    "sendMessage": "Send Message",
+    "language": "Language",
+    "experience": "Experience",
+    "education": "Education",
+    "journey": "Journey",
+    "awardsRankings": "Awards & Rankings",
+    "currentlyPursuingMD": "Currently pursuing MD in Medicine at NIH, Delhi",
+    "air35": "AIR 35",
+    "rank1Gujarat": "Rank 1 in Gujarat"
+  },
   "about": {
     "title": "About Dr. Jay Bhatt",
     "subtitle": "Your Trusted Homeopathy Specialist",
@@ -59,7 +96,7 @@
       "title": "Clinic Visit",
       "description": "In-person consultation at our clinic",
       "duration": "45-60 minutes",
-      "price": "₹400"
+      "price": "₹800"
     },
     "specializations": "Medical Specializations",
     "chronicDiseases": {
@@ -100,13 +137,13 @@
     "phone": {
       "title": "Phone Consultation",
       "description": "Direct call for immediate consultation",
-      "number": "+91 98765 43210",
+      "number": "+91 63537 50262",
       "action": "Call Now"
     },
     "whatsapp": {
       "title": "WhatsApp",
       "description": "Quick queries and appointment booking",
-      "number": "+91 98765 43210",
+      "number": "+91 63537 50262",
       "action": "Chat on WhatsApp"
     },
     "email": {
@@ -133,7 +170,7 @@
     "clinic": {
       "title": "Clinic Information",
       "location": "Clinic Location",
-      "address": "Jay Homeopathy Clinic, Anand, Gujarat, India",
+      "address": "Sanjivani Clinic, Junagadh, Gujarat, India",
       "hours": "Clinic Hours",
       "schedule": [
         "Monday - Friday: 9:00 AM - 6:00 PM",

@@ -6,6 +6,17 @@ import en from './locales/en.json';
 import hi from './locales/hi.json';
 import gu from './locales/gu.json';
 
+// Custom language detector for localStorage
+const localStorageDetector = {
+  name: 'localStorage',
+  lookup() {
+    return localStorage.getItem('lang') || 'en';
+  },
+  cacheUserLanguage(lng: string) {
+    localStorage.setItem('lang', lng);
+  }
+};
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -17,9 +28,16 @@ i18n
     },
     fallbackLng: 'en',
     debug: false,
+    detection: {
+      order: ['localStorage', 'navigator', 'htmlTag'],
+      caches: ['localStorage'],
+    },
     interpolation: {
       escapeValue: false,
     },
   });
+
+// Add custom detector
+i18n.services.languageDetector.addDetector(localStorageDetector);
 
 export default i18n;

@@ -1,31 +1,24 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Globe } from "lucide-react";
+import { useLanguage } from "@/hooks/useLanguage";
+import { useCTA } from "@/utils/cta";
 
 const Navbar = () => {
+  const { t } = useTranslation();
+  const { currentLanguage, languages, toggleLanguage } = useLanguage();
+  const { handleBookAppointment } = useCTA();
   const [isOpen, setIsOpen] = useState(false);
-  const [language, setLanguage] = useState("EN");
-
-  const languages = [
-    { code: "EN", label: "English", name: "English" },
-    { code: "HI", label: "हिंदी", name: "Hindi" },
-    { code: "GU", label: "ગુજરાતી", name: "Gujarati" },
-  ];
-
-  const toggleLanguage = () => {
-    const currentIndex = languages.findIndex(lang => lang.code === language);
-    const nextIndex = (currentIndex + 1) % languages.length;
-    setLanguage(languages[nextIndex].code);
-  };
 
   return (
     <nav className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 border-b border-border shadow-soft">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center flex-shrink-0">
             <div className="flex-shrink-0">
-              <h1 className="text-xl font-bold text-healing">Dr. HomeoWellness</h1>
+              <h1 className="text-lg md:text-xl font-bold text-healing truncate">Sanjivani Clinic</h1>
             </div>
           </div>
 
@@ -36,25 +29,25 @@ const Navbar = () => {
                 href="#home"
                 className="text-professional hover:text-healing transition-smooth px-3 py-2 rounded-md text-sm font-medium"
               >
-                Home
+                {t('nav.home')}
               </a>
               <a
                 href="#about"
                 className="text-professional hover:text-healing transition-smooth px-3 py-2 rounded-md text-sm font-medium"
               >
-                About
+                {t('nav.about')}
               </a>
               <a
                 href="#services"
                 className="text-professional hover:text-healing transition-smooth px-3 py-2 rounded-md text-sm font-medium"
               >
-                Services
+                {t('nav.services')}
               </a>
               <a
                 href="#contact"
                 className="text-professional hover:text-healing transition-smooth px-3 py-2 rounded-md text-sm font-medium"
               >
-                Contact
+                {t('nav.contact')}
               </a>
             </div>
           </div>
@@ -68,16 +61,16 @@ const Navbar = () => {
               className="text-professional hover:text-healing"
             >
               <Globe className="w-4 h-4 mr-1" />
-              {languages.find(lang => lang.code === language)?.label}
+              {languages.find(lang => lang.code === currentLanguage)?.label}
             </Button>
-            <Button variant="appointment" size="lg">
+            <Button variant="appointment" size="lg" onClick={() => handleBookAppointment()}>
               <Phone className="w-4 h-4 mr-2" />
-              Book Consultation
+              {t('common.bookAppointment')}
             </Button>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex-shrink-0">
             <Button
               variant="ghost"
               size="icon"
@@ -98,28 +91,28 @@ const Navbar = () => {
                 className="text-professional hover:text-healing block px-3 py-2 rounded-md text-base font-medium transition-smooth"
                 onClick={() => setIsOpen(false)}
               >
-                Home
+                {t('nav.home')}
               </a>
               <a
                 href="#about"
                 className="text-professional hover:text-healing block px-3 py-2 rounded-md text-base font-medium transition-smooth"
                 onClick={() => setIsOpen(false)}
               >
-                About
+                {t('nav.about')}
               </a>
               <a
                 href="#services"
                 className="text-professional hover:text-healing block px-3 py-2 rounded-md text-base font-medium transition-smooth"
                 onClick={() => setIsOpen(false)}
               >
-                Services
+                {t('nav.services')}
               </a>
               <a
                 href="#contact"
                 className="text-professional hover:text-healing block px-3 py-2 rounded-md text-base font-medium transition-smooth"
                 onClick={() => setIsOpen(false)}
               >
-                Contact
+                {t('nav.contact')}
               </a>
               <div className="pt-4 pb-2 border-t border-border">
                 <Button
@@ -129,11 +122,11 @@ const Navbar = () => {
                   className="text-professional hover:text-healing mb-2 w-full justify-start"
                 >
                   <Globe className="w-4 h-4 mr-2" />
-                  {languages.find(lang => lang.code === language)?.name}
+                  {languages.find(lang => lang.code === currentLanguage)?.name}
                 </Button>
-                <Button variant="appointment" size="lg" className="w-full">
+                <Button variant="appointment" size="lg" className="w-full" onClick={() => handleBookAppointment()}>
                   <Phone className="w-4 h-4 mr-2" />
-                  Book Consultation
+                  {t('common.bookAppointment')}
                 </Button>
               </div>
             </div>

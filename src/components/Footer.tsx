@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { 
   Phone, 
@@ -13,11 +14,13 @@ import {
 } from "lucide-react";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   const quickLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About Doctor", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Contact", href: "#contact" },
+    { name: t('nav.home'), href: "#home" },
+    { name: t('nav.about'), href: "#about" },
+    { name: t('nav.services'), href: "#services" },
+    { name: t('nav.contact'), href: "#contact" },
   ];
 
   const services = [
@@ -43,11 +46,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Section */}
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-bold text-healing mb-4">Dr. HomeoWellness</h3>
+            <h3 className="text-2xl font-bold text-healing mb-4">Sanjivani Clinic</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Dedicated to providing safe, effective, and natural healing through homeopathy. 
-              With 15+ years of experience, we offer personalized treatment for all age groups 
-              with a focus on holistic wellness.
+              With 3+ years of experience, we offer personalized treatment for all age groups 
+              with a focus on holistic wellness. "Healing with Homeopathy, Naturally."
             </p>
             <div className="flex items-center space-x-6 mb-6">
               <div className="flex items-center">
@@ -84,7 +87,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-healing mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-healing mb-4">{t('footer.quickLinks')}</h4>
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -101,7 +104,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold text-trust mb-4">Our Services</h4>
+            <h4 className="text-lg font-semibold text-trust mb-4">{t('footer.services')}</h4>
             <ul className="space-y-2">
               {services.map((service, index) => (
                 <li key={index} className="text-gray-300">
@@ -119,21 +122,21 @@ const Footer = () => {
               <Phone className="w-5 h-5 text-healing mr-3" />
               <div>
                 <div className="text-sm text-gray-400">Emergency Helpline</div>
-                <div className="font-medium">+91 98765 43210</div>
+                <div className="font-medium">+91 63537 50262</div>
               </div>
             </div>
             <div className="flex items-center">
               <Mail className="w-5 h-5 text-trust mr-3" />
               <div>
                 <div className="text-sm text-gray-400">Email Us</div>
-                <div className="font-medium">dr.wellness@homeocare.com</div>
+                <div className="font-medium">dr.jaybhatt@homeocare.com</div>
               </div>
             </div>
             <div className="flex items-center">
               <MapPin className="w-5 h-5 text-accent mr-3" />
               <div>
                 <div className="text-sm text-gray-400">Clinic Address</div>
-                <div className="font-medium">Ahmedabad, Gujarat</div>
+                <div className="font-medium">Junagadh, Gujarat</div>
               </div>
             </div>
           </div>
@@ -145,16 +148,16 @@ const Footer = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-sm text-gray-400 mb-2 md:mb-0">
-              © 2024 Dr. HomeoWellness. All rights reserved.
+              {t('footer.rights')}
             </div>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-healing transition-smooth">
+              <a href="/privacy" className="text-gray-400 hover:text-healing transition-smooth">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-400 hover:text-healing transition-smooth">
+              <a href="/terms" className="text-gray-400 hover:text-healing transition-smooth">
                 Terms of Service
               </a>
-              <a href="#" className="text-gray-400 hover:text-healing transition-smooth">
+              <a href="/terms#medical-disclaimer" className="text-gray-400 hover:text-healing transition-smooth">
                 Medical Disclaimer
               </a>
             </div>

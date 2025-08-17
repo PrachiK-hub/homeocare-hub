@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { 
@@ -11,23 +13,26 @@ import {
 } from "lucide-react";
 
 const About = () => {
+  const { t } = useTranslation();
+
+
   const qualifications = [
-    "BHMS - Bachelor of Homeopathic Medicine & Surgery",
-    "MD (Homeopathy) - Post Graduate Degree",
+    "BHMS - V.H. Dave Homeopathy College, Anand, Gujarat",
+    "MD (Medicine) - Currently Pursuing at NIH, Delhi",
     "Certified in Advanced Homeopathic Therapeutics",
     "Member of Central Council of Homeopathy (CCH)"
   ];
 
   const achievements = [
+    { year: "2024", title: "AIR 35 (All India Rank)", organization: "MD PG Exam" },
+    { year: "2024", title: "Rank 1 in Gujarat", organization: "MD PG Exam" },
     { year: "2023", title: "Excellence in Homeopathic Treatment", organization: "Indian Medical Association" },
-    { year: "2022", title: "Best Homeopath Award", organization: "Gujarat Medical Council" },
-    { year: "2021", title: "Community Service Recognition", organization: "Health Ministry" },
   ];
 
   const experience = [
-    { years: "2010-2015", role: "Junior Consultant", place: "City Homeopathic Hospital" },
-    { years: "2015-2020", role: "Senior Consultant", place: "Wellness Homeopathy Clinic" },
-    { years: "2020-Present", role: "Chief Consultant", place: "Private Practice & Online Consultations" },
+    { years: "2021-2023", role: "Junior Consultant", place: "City Homeopathic Hospital" },
+    { years: "2023-2024", role: "Senior Consultant", place: "Wellness Homeopathy Clinic" },
+    { years: "2024-Present", role: "Chief Consultant", place: "Private Practice & Online Consultations" },
   ];
 
   return (
@@ -35,11 +40,10 @@ const About = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-professional mb-4">
-            About <span className="text-healing">Dr. Rajesh Wellness</span>
+            {t('about.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Dedicated to providing safe, effective, and natural healing through the science of homeopathy. 
-            Bringing modern approach to traditional healing with patient-centered care.
+            {t('about.subtitle')}
           </p>
         </div>
 
@@ -50,17 +54,13 @@ const About = () => {
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <Heart className="w-8 h-8 text-healing mr-3" />
-                  <h3 className="text-2xl font-semibold text-professional">My Journey</h3>
+                  <h3 className="text-2xl font-semibold text-professional">{t('common.journey')}</h3>
                 </div>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  My passion for homeopathy began during my medical studies when I witnessed the gentle yet 
-                  powerful healing effects of natural remedies. After completing my BHMS and MD in Homeopathy, 
-                  I dedicated my career to helping patients find relief from chronic conditions without side effects.
+                  {t('about.journeyText')}
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Over the past 15 years, I have treated thousands of patients with conditions ranging from 
-                  acute infections to chronic diseases, always focusing on treating the person as a whole, 
-                  not just the symptoms.
+                  {t('about.experienceText')}
                 </p>
               </CardContent>
             </Card>
@@ -100,7 +100,7 @@ const About = () => {
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <GraduationCap className="w-8 h-8 text-trust mr-3" />
-                  <h3 className="text-2xl font-semibold text-professional">Education & Qualifications</h3>
+                  <h3 className="text-2xl font-semibold text-professional">{t('common.education')} & Qualifications</h3>
                 </div>
                 <div className="space-y-3">
                   {qualifications.map((qual, index) => (
@@ -118,7 +118,7 @@ const About = () => {
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <Calendar className="w-8 h-8 text-healing mr-3" />
-                  <h3 className="text-2xl font-semibold text-professional">Professional Experience</h3>
+                  <h3 className="text-2xl font-semibold text-professional">{t('common.experience')}</h3>
                 </div>
                 <div className="space-y-4">
                   {experience.map((exp, index) => (
@@ -137,7 +137,7 @@ const About = () => {
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <Award className="w-8 h-8 text-accent mr-3" />
-                  <h3 className="text-2xl font-semibold text-professional">Recognition & Awards</h3>
+                  <h3 className="text-2xl font-semibold text-professional">{t('common.awardsRankings')}</h3>
                 </div>
                 <div className="space-y-4">
                   {achievements.map((achievement, index) => (
@@ -155,20 +155,22 @@ const About = () => {
           </div>
         </div>
 
+
+
         {/* Stats Section */}
         <Card className="shadow-soft border-0 bg-gradient-trust text-secondary-foreground">
           <CardContent className="p-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div>
-                <div className="text-4xl font-bold mb-2">15+</div>
+                <div className="text-4xl font-bold mb-2">3+</div>
                 <div className="text-sm opacity-90">Years Practice</div>
               </div>
               <div>
-                <div className="text-4xl font-bold mb-2">5000+</div>
+                <div className="text-4xl font-bold mb-2">500+</div>
                 <div className="text-sm opacity-90">Patients Treated</div>
               </div>
               <div>
-                <div className="text-4xl font-bold mb-2">98%</div>
+                <div className="text-4xl font-bold mb-2">95%</div>
                 <div className="text-sm opacity-90">Success Rate</div>
               </div>
               <div>

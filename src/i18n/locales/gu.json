@@ -16,6 +16,43 @@
     "consultOnline": "ઓનલાઇન સલાહ",
     "contactDoctor": "ડૉક્ટરનો સંપર્ક કરો"
   },
+  "common": {
+    "bookAppointment": "અપોઇન્ટમેન્ટ બુક કરો",
+    "consultOnline": "ઓનલાઇન કન્સલ્ટેશન",
+    "contactDoctor": "ડૉક્ટરનો સંપર્ક કરો",
+    "name": "નામ",
+    "age": "વય",
+    "gender": "લિંગ",
+    "email": "ઈમેલ",
+    "phone": "ફોન",
+    "addressOptional": "સરનામું (વૈકલ્પિક)",
+    "symptomsConcerns": "લક્ષણો/ચિંતા",
+    "chooseService": "સેવા પસંદ કરો",
+    "onlineConsultation": "ઓનલાઇન કન્સલ્ટેશન",
+    "clinicVisit": "ક્લિનિક મુલાકાત",
+    "childHealthPackage": "બાળ આરોગ્ય પેકેજ",
+    "chronicDiseaseManagement": "દીર્ઘકાલીન રોગ સંભાળ",
+    "date": "તારીખ",
+    "time": "સમય",
+    "paymentMethod": "ચુકવણી રીત",
+    "payOnline": "ઓનલાઇન ચુકવણી",
+    "payInPerson": "ક્લિનિક પર ચુકવણી",
+    "confirmBooking": "બુકિંગ ખાતરી કરો",
+    "bookingSuccessful": "બુકિંગ સફળતા",
+    "confirmationSent": "અમે પુષ્ટિ મોકલી છે",
+    "downloadCalendarInvite": "કેલેન્ડર આમંત્રણ ડાઉનલોડ કરો",
+    "whatsappUs": "વોટ્સએપ કરો",
+    "call": "કૉલ કરો",
+    "sendMessage": "સંદેશ મોકલો",
+    "language": "ભાષા",
+    "experience": "અનુભવ",
+    "education": "શિક્ષણ",
+    "journey": "પ્રવાસ",
+    "awardsRankings": "એવોર્ડ્સ અને રેન્કિંગ",
+    "currentlyPursuingMD": "હાલ NIH, દિલ્હી ખાતે મેડિસિનમાં એમ.ડી. કરી રહ્યા છે",
+    "air35": "એઆઈઆર 35",
+    "rank1Gujarat": "ગુજરાતમાં રેન્ક 1"
+  },
   "about": {
     "title": "ડૉ. જય ભટ્ટ વિશે",
     "subtitle": "તમારા વિશ્વસનીય હોમિયોપેથી નિષ્ણાત",
@@ -59,7 +96,7 @@
       "title": "ક્લિનિક મુલાકાત",
       "description": "અમારા ક્લિનિકમાં વ્યક્તિગત સલાહ",
       "duration": "45-60 મિનિટ",
-      "price": "₹400"
+      "price": "₹800"
     },
     "specializations": "તબીબી વિશેષતાઓ",
     "chronicDiseases": {
@@ -100,13 +137,13 @@
     "phone": {
       "title": "ફોન સલાહ",
       "description": "તાત્કાલિક સલાહ માટે સીધો કૉલ કરો",
-      "number": "+91 98765 43210",
+      "number": "+91 63537 50262",
       "action": "હવે કૉલ કરો"
     },
     "whatsapp": {
       "title": "વોટ્સએપ",
       "description": "ત્વરિત પ્રશ્નો અને એપોઇન્ટમેન્ટ બુકિંગ",
-      "number": "+91 98765 43210",
+      "number": "+91 63537 50262",
       "action": "વોટ્સએપ પર ચેટ કરો"
     },
     "email": {
@@ -133,7 +170,7 @@
     "clinic": {
       "title": "ક્લિનિકની માહિતી",
       "location": "ક્લિનિકનું સ્થાન",
-      "address": "જય હોમિયોપેથી ક્લિનિક, આણંદ, ગુજરાત, ભારત",
+      "address": "સંજીવની ક્લિનિક, જૂનાગઢ, ગુજરાત, ભારત",
       "hours": "ક્લિનિકના કલાકો",
       "schedule": [
         "સોમવાર - શુક્રવાર: સવારે 9:00 - સાંજે 6:00",

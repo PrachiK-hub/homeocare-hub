@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { 
@@ -12,39 +13,43 @@ import {
   User,
   Users
 } from "lucide-react";
+import { useCTA } from "@/utils/cta";
 
 const Services = () => {
+  const { t } = useTranslation();
+  const { handleBookAppointment, handleClinicVisit } = useCTA();
+
   const consultationTypes = [
     {
       icon: Video,
-      title: "Video Consultation",
-      description: "Face-to-face consultation from home comfort",
-      duration: "30-45 mins",
-      price: "₹800",
+      title: t('common.onlineConsultation'),
+      description: t('services.videoConsultation.description'),
+      duration: t('services.videoConsultation.duration'),
+      price: t('services.videoConsultation.price'),
       variant: "trust" as const,
     },
     {
       icon: Phone,
-      title: "Phone Consultation",
-      description: "Professional consultation over phone call",
-      duration: "20-30 mins", 
-      price: "₹600",
+      title: t('services.phoneConsultation.title'),
+      description: t('services.phoneConsultation.description'),
+      duration: t('services.phoneConsultation.duration'), 
+      price: t('services.phoneConsultation.price'),
       variant: "consultation" as const,
     },
     {
       icon: MessageCircle,
-      title: "Chat Consultation",
-      description: "Quick consultation via secure messaging",
-      duration: "24 hrs response",
-      price: "₹400",
+      title: t('services.chatConsultation.title'),
+      description: t('services.chatConsultation.description'),
+      duration: t('services.chatConsultation.duration'),
+      price: t('services.chatConsultation.price'),
       variant: "calm" as const,
     },
     {
       icon: Stethoscope,
-      title: "Clinic Visit",
-      description: "In-person detailed examination & treatment",
-      duration: "45-60 mins",
-      price: "₹1000",
+      title: t('common.clinicVisit'),
+      description: t('services.clinicVisit.description'),
+      duration: t('services.clinicVisit.duration'),
+      price: t('services.clinicVisit.price'),
       variant: "default" as const,
     },
   ];
@@ -52,26 +57,26 @@ const Services = () => {
   const specializations = [
     {
       icon: Heart,
-      title: "Chronic Diseases",
-      description: "Diabetes, Hypertension, Arthritis, Thyroid disorders",
+      title: t('common.chronicDiseaseManagement'),
+      description: t('services.chronicDiseases.description'),
       color: "text-red-500",
     },
     {
       icon: User,
-      title: "Skin & Allergies", 
-      description: "Eczema, Psoriasis, Allergic reactions, Acne",
+      title: t('services.skinAllergies.title'), 
+      description: t('services.skinAllergies.description'),
       color: "text-healing",
     },
     {
       icon: Baby,
-      title: "Child Health",
-      description: "Immunity building, Growth issues, Behavioral problems",
+      title: t('common.childHealthPackage'),
+      description: t('services.childHealth.description'),
       color: "text-trust",
     },
     {
       icon: Users,
-      title: "Women's Health",
-      description: "PCOS, Menstrual disorders, Pregnancy care",
+      title: t('services.womensHealth.title'),
+      description: t('services.womensHealth.description'),
       color: "text-purple-500",
     },
   ];
@@ -81,10 +86,10 @@ const Services = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-professional mb-4">
-            Our <span className="text-healing">Services</span>
+            {t('services.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Choose from multiple consultation options designed for your convenience and comfort
+            {t('services.subtitle')}
           </p>
         </div>
 
@@ -107,8 +112,20 @@ const Services = () => {
                     {service.duration}
                   </div>
                   <div className="text-2xl font-bold text-healing mb-4">{service.price}</div>
-                  <Button variant={service.variant} className="w-full">
-                    Book Now
+                  <Button 
+                    variant={service.variant} 
+                    className="w-full"
+                    onClick={() => {
+                      if (service.title === t('common.onlineConsultation')) {
+                        handleBookAppointment('online-consultation');
+                      } else if (service.title === t('common.clinicVisit')) {
+                        handleClinicVisit();
+                      } else {
+                        handleBookAppointment();
+                      }
+                    }}
+                  >
+                    {t('common.bookAppointment')}
                   </Button>
                 </CardContent>
               </Card>
@@ -119,7 +136,7 @@ const Services = () => {
         {/* Specializations */}
         <div className="text-center mb-8">
           <h3 className="text-2xl md:text-3xl font-bold text-professional mb-4">
-            <span className="text-trust">Specializations</span>
+            {t('services.specializations')}
           </h3>
           <p className="text-muted-foreground max-w-xl mx-auto">
             Expert treatment for various health conditions with personalized homeopathic care
@@ -145,22 +162,22 @@ const Services = () => {
             <div className="flex items-center justify-center">
               <Shield className="w-8 h-8 text-healing mr-3" />
               <div className="text-left">
-                <div className="text-lg font-semibold text-professional">100% Safe</div>
-                <div className="text-sm text-muted-foreground">No side effects</div>
+                <div className="text-lg font-semibold text-professional">{t('services.safety.title')}</div>
+                <div className="text-sm text-muted-foreground">{t('services.safety.description')}</div>
               </div>
             </div>
             <div className="flex items-center justify-center">
               <Clock className="w-8 h-8 text-trust mr-3" />
               <div className="text-left">
-                <div className="text-lg font-semibold text-professional">Quick Response</div>
-                <div className="text-sm text-muted-foreground">Same day booking</div>
+                <div className="text-lg font-semibold text-professional">{t('services.response.title')}</div>
+                <div className="text-sm text-muted-foreground">{t('services.response.description')}</div>
               </div>
             </div>
             <div className="flex items-center justify-center">
               <Heart className="w-8 h-8 text-red-500 mr-3" />
               <div className="text-left">
-                <div className="text-lg font-semibold text-professional">Caring Approach</div>
-                <div className="text-sm text-muted-foreground">Patient-focused care</div>
+                <div className="text-lg font-semibold text-professional">{t('services.care.title')}</div>
+                <div className="text-sm text-muted-foreground">{t('services.care.description')}</div>
               </div>
             </div>
           </div>

@@ -16,6 +16,43 @@
     "consultOnline": "ऑनलाइन परामर्श",
     "contactDoctor": "डॉक्टर से संपर्क करें"
   },
+  "common": {
+    "bookAppointment": "अपॉइंटमेंट बुक करें",
+    "consultOnline": "ऑनलाइन परामर्श",
+    "contactDoctor": "डॉक्टर से संपर्क करें",
+    "name": "नाम",
+    "age": "आयु",
+    "gender": "लिंग",
+    "email": "ईमेल",
+    "phone": "फ़ोन",
+    "addressOptional": "पता (वैकल्पिक)",
+    "symptomsConcerns": "लक्षण/चिंताएँ",
+    "chooseService": "सेवा चुनें",
+    "onlineConsultation": "ऑनलाइन परामर्श",
+    "clinicVisit": "क्लिनिक विज़िट",
+    "childHealthPackage": "बच्चों के स्वास्थ्य पैकेज",
+    "chronicDiseaseManagement": "दीर्घकालिक रोग प्रबंधन",
+    "date": "तारीख",
+    "time": "समय",
+    "paymentMethod": "भुगतान विधि",
+    "payOnline": "ऑनलाइन भुगतान",
+    "payInPerson": "क्लिनिक पर भुगतान",
+    "confirmBooking": "बुकिंग की पुष्टि करें",
+    "bookingSuccessful": "बुकिंग सफल",
+    "confirmationSent": "हमने पुष्टि भेज दी है",
+    "downloadCalendarInvite": "कैलेंडर आमंत्रण डाउनलोड करें",
+    "whatsappUs": "व्हाट्सएप करें",
+    "call": "कॉल करें",
+    "sendMessage": "संदेश भेजें",
+    "language": "भाषा",
+    "experience": "अनुभव",
+    "education": "शिक्षा",
+    "journey": "सफ़र",
+    "awardsRankings": "पुरस्कार और रैंकिंग",
+    "currentlyPursuingMD": "वर्तमान में NIH, दिल्ली में मेडिसिन में एमडी कर रहे हैं",
+    "air35": "एआईआर 35",
+    "rank1Gujarat": "गुजरात में रैंक 1"
+  },
   "about": {
     "title": "डॉ. जय भट्ट के बारे में",
     "subtitle": "आपके विश्वसनीय होम्योपैथी विशेषज्ञ",
@@ -59,7 +96,7 @@
       "title": "क्लिनिक विजिट",
       "description": "हमारे क्लिनिक में व्यक्तिगत परामर्श",
       "duration": "45-60 मिनट",
-      "price": "₹400"
+      "price": "₹800"
     },
     "specializations": "चिकित्सा विशेषज्ञताएं",
     "chronicDiseases": {
@@ -100,13 +137,13 @@
     "phone": {
       "title": "फोन परामर्श",
       "description": "तत्काल परामर्श के लिए सीधे कॉल करें",
-      "number": "+91 98765 43210",
+      "number": "+91 63537 50262",
       "action": "अभी कॉल करें"
     },
     "whatsapp": {
       "title": "व्हाट्सऐप",
       "description": "त्वरित प्रश्न और अपॉइंटमेंट बुकिंग",
-      "number": "+91 98765 43210",
+      "number": "+91 63537 50262",
       "action": "व्हाट्सऐप पर चैट करें"
     },
     "email": {
@@ -133,7 +170,7 @@
     "clinic": {
       "title": "क्लिनिक जानकारी",
       "location": "क्लिनिक का स्थान",
-      "address": "जय होम्योपैथी क्लिनिक, आणंद, गुजरात, भारत",
+      "address": "संजीवनी क्लिनिक, जूनागढ़, गुजरात, भारत",
       "hours": "क्लिनिक के घंटे",
       "schedule": [
         "सोमवार - शुक्रवार: सुबह 9:00 - शाम 6:00",
